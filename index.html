@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Empty gadget</title>
+
+    <style>
+      form {
+        display: block;
+      }
+
+      form input {
+        width: 50%;
+      }
+
+      span {
+        margin-top: 50px;
+        display: inline-block;
+      }
+
+      .messages {
+        width: 50%;
+        height: 200px;
+        border: 1px solid rgba(255, 0, 0, 0.1);
+        overflow-y: auto;
+      }
+
+      .msg {
+        display: block;
+        margin: 0;
+        padding: 0.25em;
+        opacity: 0.8;
+      }
+
+      .msg.own {
+        color: rgba(0,0,255, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="messages"></div>
+      <form class="peer-connect-form">
+        <input type="text"/>
+        <input type="submit" value="magic butan"/>
+      </form>
+    </div>
+
+    <!-- deps -->
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="bower_components/versal-player-api/index.js"></script>
+    <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <!-- gadget code -->
+    <script src="gadget.js"></script>
+  </body>
+</html>

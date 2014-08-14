@@ -1,0 +1,10 @@
+{
+  "name": "talkr",
+  "version": "0.0.1",
+  "title": "Talkr",
+  "description": "Does nothing just yet",
+  "author": "ryjo",
+  "launcher": "iframe",
+  "defaultConfig": {},
+  "defaultUserState": {}
+}
